@@ -63,8 +63,7 @@ let db;try{db=normalizeDb(JSON.parse(localStorage.getItem(KEY)||'null'))}catch(e
         }
       (aviso: quem souber o código de família consegue ler/editar — não compartilhe o código, só entre vocês dois)
    3) Em Configurações do projeto > Seus apps > Web, copie o objeto de config e cole abaixo. */
-const firebaseConfig={apiKey:"SUA_API_KEY",authDomain:"SEU_PROJETO.firebaseapp.com",projectId:"SEU_PROJETO",storageBucket:"SEU_PROJETO.appspot.com",messagingSenderId:"SEU_ID",appId:"SEU_APP_ID"};
-let fbApp=null,fbDoc=null,fbUnsub=null,applyingRemote=false,curTab='home';
+const firebaseConfig={apiKey:"AIzaSyDOZByCYn-lVQ_BCz4P3NCQwdVGBVeN78Y",authDomain:"minha-bebe-f0abb.firebaseapp.com",projectId:"minha-bebe-f0abb",storageBucket:"minha-bebe-f0abb.firebasestorage.app",messagingSenderId:"689532559015",appId:"1:689532559015:web:2a59dd1e43fdb30c2ac582"};
 if(typeof firebase!=='undefined'&&firebaseConfig.apiKey&&firebaseConfig.apiKey!=='SUA_API_KEY'){try{fbApp=firebase.initializeApp(firebaseConfig)}catch(e){}}
 function firebaseReady(){return !!fbApp}
 function familyCodeKey(){return 'minhaBebeFamilyCode'}
